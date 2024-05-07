@@ -1,0 +1,44 @@
+#quiz-box {
+    text-align: center;
+    background-color: rgb(245, 245, 220);
+    padding: 50px;
+    margin: 50px auto;
+    width: fit-content;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#next-button {
+    margin-top: 20px;
+    background-color: rgb(54, 102, 141);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#next-button:hover {
+    background-color: rgb(43, 87, 126);
+}
+
+#answer-buttons button {
+    padding: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    background-color: rgb(54, 102, 141);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#answer-buttons button:hover {
+    background-color: rgb(43, 87, 126);
+}
+
+#score {
+    margin-top: 20px;
+    color: rgb(54, 102, 141);
+    font-weight: bold;
+}

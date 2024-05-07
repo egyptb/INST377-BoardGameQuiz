@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Board Game Quiz</title> 
+        <link rel="stylesheet" href="pages-style.css">
+        <link rel="stylesheet" href="boardQuiz.css">
+        <script src="boardQuiz.js"></script>
+        <title>Tester</title>
+       
+        
+    </head>
+    <body>
+
+
+        <!-- Header-->
+        <header>
+            <h1> The Board Game Quiz </h1>
+        </header>
+
+
+        <!--Nav Bar-->
+        <nav id="main-nav">
+            <ul>
+                <li><a href="home-page.html">Home</a></li>
+                <li><a href="boardQuiz.html">The Quiz</a></li>
+                <li><a href="about-page.html">About</a></li>
+            </ul>
+        </nav>
+
+            <!--The Quiz Box Area-->
+        <div id="quiz-box">
+            <h1> Board Game Quiz </h1>
+            <div id="questions-container">
+                <p id="questions-text" data-index="0">Question goes here</p>
+                <div id="answer-buttons">
+                    <!-- Answer buttons will be added dynamically-->
+                </div>
+            </div>
+            <div id="score">Score: 0</div> 
+            <button id="next-button" onclick="nextQuestion()">Next</button>
+        </div>
+
+
+       
+
+    </body>
+</html>
