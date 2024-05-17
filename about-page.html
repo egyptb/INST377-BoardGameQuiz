@@ -3,6 +3,7 @@
         <title>About Page</title>
         <link rel="stylesheet" href="pages-style.css">
         <link rel="stylesheet" href="about.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     </head>
     <body>
         <header>
@@ -22,6 +23,47 @@
             <p>Welcome to The Board Game Quiz! This quiz is designed to test your knowledge of board game release years. You will be presented with questions about when certain board games were published. Try to select the correct year from the provided options.</p>
             <p>Enjoy the quiz and have fun!</p>
         </div>
+        <br><br>
+
+         <!--ChartJS-->
+         <div id = "Chart">
+            <canvas id="myLineChart" width="400" height="200"></canvas>
+  
+            <script>
+                // Get the context of the canvas element we want to select
+                var ctx = document.getElementById('myLineChart').getContext('2d');
+  
+                // Create the chart
+                var myLineChart = new Chart(ctx, {
+                    type: 'line', // Specify the chart type
+                    data: {
+                        labels: ['2022', '2023', '2024', '2025'], // Labels for the x-axis
+                        datasets: [{
+                            label: 'Estimated global board game market value($ Billions)', // The label for the dataset
+                            data: [11.88, 13.06, 14.41, 15.91], // The data points
+                            borderColor: 'rgba(54, 102, 141)', // Line color
+                            backgroundColor: 'rgba(75, 192, 192, 0.2)', // Fill color under the line
+                            borderWidth: 1 // Line width
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: false
+                            }
+                        },
+                        plugins: {
+                            title: {
+                                display: true,
+                                text: 'Board Games Projected Market Growth'
+                            }
+                        }
+                    }
+                });
+            </script>
+                </div>
+  
+  
 
 
     </body>
