@@ -8,5 +8,4 @@ Target browsers:
 
 
 
-
-Link to Developer Manual: 
+Developer Manual: 
